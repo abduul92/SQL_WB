@@ -1,6 +1,6 @@
 \! cls
 
--- Basics / Tabelle + Datensätze anlegen
+-- AUTO INCREMENT / INDEX / Primärschlüssel
 
 -- DBs anzeigen
 SHOW DATABASES;
@@ -18,8 +18,11 @@ DROP TABLE IF EXISTS kunde;
 
 -- Tabelle anlegen
 CREATE TABLE IF NOT EXISTS kunde
-(    k_name VARCHAR(45),
-     k_alter TINYINT
+(   
+    k_id INT AUTO_INCREMENT PRIMARY KEY,
+    k_name VARCHAR(45),
+    k_alter TINYINT
+
    
 );
 
@@ -31,8 +34,11 @@ DESCRIBE kunde;
 
 -- Datensätze / Zeilen
 INSERT INTO kunde (k_name, k_alter) VALUES
-('Abdullah', 33),
-('Hilal', 32);
+('Meier', 28),
+('Hussein', 32),
+('Li', 26),
+('Li', 40),
+('Li', 61);
 
 -- Tabellendaten (Inhalte) anzeigen
 SELECT * FROM kunde;
