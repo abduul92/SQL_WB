@@ -26,3 +26,21 @@ SHOW TABLES;
 
 -- Struktur anzeigen
 DESCRIBE Kunde;
+
+-- Datensätze / Zeilen
+INSERT INTO Kunde (k_name, k_alter) VALUES
+('Abdullah', 33),
+('Hilal', 32);
+
+-- Tabellendaten (Inhalte) anzeigen
+SELECT * FROM Kunde;
+
+
+
+        
+     
+    
+
+
+
+
