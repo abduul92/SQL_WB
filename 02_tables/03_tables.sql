@@ -42,6 +42,9 @@ INSERT INTO kunde (k_name, k_alter, k_email) VALUES
 ('Li', 40,'li40@web.de'),
 ('Li', 61,'li61@web.de');
 
+INSERT INTO kunde (k_name, k_alter, k_email) VALUES
+(NULL, NULL, NULL);
+
 -- Tabellendaten (Inhalte) anzeigen
 SELECT * FROM kunde;
 
