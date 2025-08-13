@@ -7,10 +7,28 @@
 
 SELECT
      * 
-FROM boo.contacts
+FROM languages.contacts
 ;
 
 SELECT
      email
-FROM boo.contacts
+FROM languages.contacts
 ;
+
+
+SELECT
+     id,
+     email,
+     city
+FROM languages.contacts
+WHERE city = 'Berlin'
+;
+
+SELECT
+     id,
+     email,
+     city
+FROM languages.contacts
+WHERE city = 'Fra%'
+;
+
